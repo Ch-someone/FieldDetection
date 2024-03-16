@@ -65,6 +65,6 @@ jobs:
           # export PYTHONPATH="$PWD"  # to run '$ python *.py' files in subdirectories
           di=cpu # inference devices  # define device
 
-          python detect.py --weights runs/train/exp/weights/last.pt --device $di
+          python detect.py--device $di
 
         shell: bash
